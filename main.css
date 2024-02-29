@@ -1,0 +1,20 @@
+#container{
+    border: 10px;
+    margin-left: 20px;
+    background-image: url(https://www.welovesolo.com/wp-content/uploads/2014/12/p16psv1a9ng361effu30gge399-details.jpg);
+}
+h1{
+    position: relative;
+    left: 558px;
+}
+#questions {
+    display: none;
+}
+.question{
+    margin-left: 20px;
+}
+#submitContainer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}

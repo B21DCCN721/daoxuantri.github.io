@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Đào Xuân Trí-B21DCCN721</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Bài thực hành tổ 1.1</h1>
+            <form id="quiz-form">
+                <div id="user-info">
+                    <p>Nhập thông tin của bạn:</p>
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="birth">Ngày tháng năm sinh:</label>
+                    <input type="date" id="birth" name="birth" required><br><br>
+                    <label for="id">Mã sinh viên:</label>
+                    <input type="text" id="id" name="id" required><br><br>
+                    <label for="class">Lớp:</label>
+                    <input type="text" id="class" name="class" required><br><br>
+                    <button type="button" id="startQuizButton">Bắt đầu làm bài</button>
+
+                </div>
+                <div id="questions">
+                    <p>Trả lời 40 câu hỏi sau:</p>
+                    <div id="group-1">
+                        <h2>Nhóm 1: Lựa chọn đúng/sai</h2>
+                        <div class="question">
+                            <p>Câu hỏi 1</p>
+                            <input type="radio" id="q1-a1" name="q1" value="true" required>
+                            <label for="q1-a1">Đúng</label>
+                            <input type="radio" id="q1-a2" name="q1" value="false">
+                            <label for="q1-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 2</p>
+                            <input type="radio" id="q2-a1" name="q2" value="true" required>
+                            <label for="q2-a1">Đúng</label>
+                            <input type="radio" id="q2-a2" name="q2" value="false">
+                            <label for="q2-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 3</p>
+                            <input type="radio" id="q3-a1" name="q3" value="true" required>
+                            <label for="q3-a1">Đúng</label>
+                            <input type="radio" id="q3-a2" name="q3" value="false">
+                            <label for="q3-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 4</p>
+                            <input type="radio" id="q4-a1" name="q4" value="true" required>
+                            <label for="q4-a1">Đúng</label>
+                            <input type="radio" id="q4-a2" name="q4" value="false">
+                            <label for="q4-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 5</p>
+                            <input type="radio" id="q5-a1" name="q5" value="true" required>
+                            <label for="q5-a1">Đúng</label>
+                            <input type="radio" id="q5-a2" name="q5" value="false">
+                            <label for="q5-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 6</p>
+                            <input type="radio" id="q6-a1" name="q6" value="true" required>
+                            <label for="q6-a1">Đúng</label>
+                            <input type="radio" id="q6-a2" name="q6" value="false">
+                            <label for="q6-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 7</p>
+                            <input type="radio" id="q7-a1" name="q7" value="true" required>
+                            <label for="q7-a1">Đúng</label>
+                            <input type="radio" id="q7-a2" name="q7" value="false">
+                            <label for="q7-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 8</p>
+                            <input type="radio" id="q8-a1" name="q8" value="true" required>
+                            <label for="q8-a1">Đúng</label>
+                            <input type="radio" id="q8-a2" name="q8" value="false">
+                            <label for="q8-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 9</p>
+                            <input type="radio" id="q9-a1" name="q9" value="true" required>
+                            <label for="q9-a1">Đúng</label>
+                            <input type="radio" id="q9-a2" name="q9" value="false">
+                            <label for="q9-a2">Sai</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 10</p>
+                            <input type="radio" id="q10-a1" name="q10" value="true" required>
+                            <label for="q10-a1">Đúng</label>
+                            <input type="radio" id="q10-a2" name="q10" value="false">
+                            <label for="q10-a2">Sai</label>
+                        </div>
+                    </div>
+                    <div id="group-2">
+                        <h2>Nhóm 2:Chọn A,B,C,D cho câu trả lời đúng</h2>
+                        <div class="question">
+                            <p>Câu hỏi 11</p>
+                            <input type="radio" id="q11-a1" name="q11" value="A" required>
+                            <label for="q11-a1">A</label>
+                            <input type="radio" id="q11-a2" name="q11" value="B">
+                            <label for="q11-a2">B</label>
+                            <input type="radio" id="q11-a3" name="q11" value="C">
+                            <label for="q11-a3">C</label>
+                            <input type="radio" id="q11-a4" name="q11" value="D">
+                            <label for="q11-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 12</p>
+                            <input type="radio" id="q12-a1" name="q12" value="A" required>
+                            <label for="q12-a1">A</label>
+                            <input type="radio" id="q12-a2" name="q12" value="B">
+                            <label for="q12-a2">B</label>
+                            <input type="radio" id="q12-a3" name="q12" value="C">
+                            <label for="q12-a3">C</label>
+                            <input type="radio" id="q12-a4" name="q12" value="D">
+                            <label for="q12-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 13</p>
+                            <input type="radio" id="q13-a1" name="q13" value="A" required>
+                            <label for="q13-a1">A</label>
+                            <input type="radio" id="q13-a2" name="q13" value="B">
+                            <label for="q13-a2">B</label>
+                            <input type="radio" id="q13-a3" name="q13" value="C">
+                            <label for="q13-a3">C</label>
+                            <input type="radio" id="q13-a4" name="q13" value="D">
+                            <label for="q13-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 14</p>
+                            <input type="radio" id="q14-a1" name="q14" value="A" required>
+                            <label for="q14-a1">A</label>
+                            <input type="radio" id="q14-a2" name="q14" value="B">
+                            <label for="q14-a2">B</label>
+                            <input type="radio" id="q14-a3" name="q14" value="C">
+                            <label for="q14-a3">C</label>
+                            <input type="radio" id="q14-a4" name="q14" value="D">
+                            <label for="q14-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 15</p>
+                            <input type="radio" id="q15-a1" name="q15" value="A" required>
+                            <label for="q15-a1">A</label>
+                            <input type="radio" id="q15-a2" name="q15" value="B">
+                            <label for="q15-a2">B</label>
+                            <input type="radio" id="q15-a3" name="q15" value="C">
+                            <label for="q15-a3">C</label>
+                            <input type="radio" id="q15-a4" name="q15" value="D">
+                            <label for="q15-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 16</p>
+                            <input type="radio" id="q16-a1" name="q16" value="A" required>
+                            <label for="q16-a1">A</label>
+                            <input type="radio" id="q16-a2" name="q16" value="B">
+                            <label for="q16-a2">B</label>
+                            <input type="radio" id="q16-a3" name="q16" value="C">
+                            <label for="q16-a3">C</label>
+                            <input type="radio" id="q16-a4" name="q16" value="D">
+                            <label for="q16-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 17</p>
+                            <input type="radio" id="q17-a1" name="q17" value="A" required>
+                            <label for="q17-a1">A</label>
+                            <input type="radio" id="q17-a2" name="q17" value="B">
+                            <label for="q11-a2">B</label>
+                            <input type="radio" id="q17-a3" name="q17" value="C">
+                            <label for="q17-a3">C</label>
+                            <input type="radio" id="q17-a4" name="q17" value="D">
+                            <label for="q17-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 18</p>
+                            <input type="radio" id="q18-a1" name="q18" value="A" required>
+                            <label for="q18-a1">A</label>
+                            <input type="radio" id="q18-a2" name="q18" value="B">
+                            <label for="q18-a2">B</label>
+                            <input type="radio" id="q18-a3" name="q18" value="C">
+                            <label for="q18-a3">C</label>
+                            <input type="radio" id="q18-a4" name="q18" value="D">
+                            <label for="q18-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 19</p>
+                            <input type="radio" id="q19-a1" name="q19" value="A" required>
+                            <label for="q19-a1">A</label>
+                            <input type="radio" id="q19-a2" name="q19" value="B">
+                            <label for="q19-a2">B</label>
+                            <input type="radio" id="q19-a3" name="q19" value="C">
+                            <label for="q19-a3">C</label>
+                            <input type="radio" id="q19-a4" name="q19" value="D">
+                            <label for="q19-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 20</p>
+                            <input type="radio" id="q20-a1" name="q20" value="A" required>
+                            <label for="q20-a1">A</label>
+                            <input type="radio" id="q20-a2" name="q20" value="B">
+                            <label for="q20-a2">B</label>
+                            <input type="radio" id="q20-a3" name="q20" value="C">
+                            <label for="q20-a3">C</label>
+                            <input type="radio" id="q20-a4" name="q20" value="D">
+                            <label for="q20-a4">D</label>
+                        </div>
+                    </div>
+                    <div id="group-3">
+                        <h2>Nhóm 3:Chọn các đáp án đúng</h2>
+                        <div class="question">
+                            <p>Câu hỏi 21</p>
+                            <input type="checkbox" id="q21-a1" name="q21" value="A">
+                            <label for="q21-a1">A</label>
+                            <input type="checkbox" id="q21-a2" name="q21" value="B">
+                            <label for="q21-a2">B</label>
+                            <input type="checkbox" id="q21-a3" name="q21" value="C">
+                            <label for="q21-a3">C</label>
+                            <input type="checkbox" id="q21-a4" name="q21" value="D">
+                            <label for="q21-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 22</p>
+                            <input type="checkbox" id="q22-a1" name="q22" value="A">
+                            <label for="q22-a1">A</label>
+                            <input type="checkbox" id="q22-a2" name="q22" value="B">
+                            <label for="q22-a2">B</label>
+                            <input type="checkbox" id="q22-a3" name="q22" value="C">
+                            <label for="q22-a3">C</label>
+                            <input type="checkbox" id="q22-a4" name="q22" value="D">
+                            <label for="q22-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 23</p>
+                            <input type="checkbox" id="q23-a1" name="q23" value="A">
+                            <label for="q23-a1">A</label>
+                            <input type="checkbox" id="q23-a2" name="q23" value="B">
+                            <label for="q23-a2">B</label>
+                            <input type="checkbox" id="q23-a3" name="q23" value="C">
+                            <label for="q23-a3">C</label>
+                            <input type="checkbox" id="q23-a4" name="q23" value="D">
+                            <label for="q23-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 24</p>
+                            <input type="checkbox" id="q24-a1" name="q24" value="A">
+                            <label for="q24-a1">A</label>
+                            <input type="checkbox" id="q24-a2" name="q24" value="B">
+                            <label for="q24-a2">B</label>
+                            <input type="checkbox" id="q24-a3" name="q24" value="C">
+                            <label for="q24-a3">C</label>
+                            <input type="checkbox" id="q24-a4" name="q24" value="D">
+                            <label for="q24-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 25</p>
+                            <input type="checkbox" id="q25-a1" name="q25" value="A">
+                            <label for="q25-a1">A</label>
+                            <input type="checkbox" id="q25-a2" name="q25" value="B">
+                            <label for="q25-a2">B</label>
+                            <input type="checkbox" id="q25-a3" name="q25" value="C">
+                            <label for="q25-a3">C</label>
+                            <input type="checkbox" id="q25-a4" name="q25" value="D">
+                            <label for="q25-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 26</p>
+                            <input type="checkbox" id="q26-a1" name="q26" value="A">
+                            <label for="q26-a1">A</label>
+                            <input type="checkbox" id="q26-a2" name="q26" value="B">
+                            <label for="q26-a2">B</label>
+                            <input type="checkbox" id="q26-a3" name="q26" value="C">
+                            <label for="q26-a3">C</label>
+                            <input type="checkbox" id="q26-a4" name="q26" value="D">
+                            <label for="q26-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 27</p>
+                            <input type="checkbox" id="q27-a1" name="q27" value="A">
+                            <label for="q27-a1">A</label>
+                            <input type="checkbox" id="q27-a2" name="q27" value="B">
+                            <label for="q27-a2">B</label>
+                            <input type="checkbox" id="q27-a3" name="q27" value="C">
+                            <label for="q27-a3">C</label>
+                            <input type="checkbox" id="q27-a4" name="q27" value="D">
+                            <label for="q27-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 28</p>
+                            <input type="checkbox" id="q28-a1" name="q28" value="A">
+                            <label for="q28-a1">A</label>
+                            <input type="checkbox" id="q28-a2" name="q28" value="B">
+                            <label for="q28-a2">B</label>
+                            <input type="checkbox" id="q28-a3" name="q28" value="C">
+                            <label for="q28-a3">C</label>
+                            <input type="checkbox" id="q28-a4" name="q28" value="D">
+                            <label for="q28-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 29</p>
+                            <input type="checkbox" id="q29-a1" name="q29" value="A">
+                            <label for="q29-a1">A</label>
+                            <input type="checkbox" id="q29-a2" name="q29" value="B">
+                            <label for="q29-a2">B</label>
+                            <input type="checkbox" id="q29-a3" name="q29" value="C">
+                            <label for="q29-a3">C</label>
+                            <input type="checkbox" id="q29-a4" name="q29" value="D">
+                            <label for="q29-a4">D</label>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 30</p>
+                            <input type="checkbox" id="q30-a1" name="q30" value="A">
+                            <label for="q30-a1">A</label>
+                            <input type="checkbox" id="q30-a2" name="q30" value="B">
+                            <label for="q30-a2">B</label>
+                            <input type="checkbox" id="q30-a3" name="q30" value="C">
+                            <label for="q30-a3">C</label>
+                            <input type="checkbox" id="q30-a4" name="q30" value="D">
+                            <label for="q30-a4">D</label>
+                        </div>
+                    </div>
+                    <div id="group-4">
+                        <h2>Nhóm 4:Điền Câu trả lời đúng</h2>
+                        <div class="question">
+                            <p>Câu hỏi 31</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 32</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 33</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 34</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 35</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 36</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 37</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 38</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 39</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div>
+                        <div class="question">
+                            <p>Câu hỏi 40</p>
+                            <label for="q31">Điền vào ô trống:</label>
+                            <input type="text" id="q31" name="q31" required>
+                        </div> 
+                    </div> 
+                    <div id="submitContainer">
+                        <button type="submit" id="submit">Submit</button>
+                    </div>                         
+                    
+                </div>
+
+            </form>
+        </div>
+    </body>
+</html>
